@@ -134,8 +134,8 @@
   <nav class="key" aria-label="4分類"></nav>
   <main id="figure"></main>
   <section class="pairs">
-    <h2>名コンビ &mdash; ぶつかって、一目置く</h2>
-    <p class="ph-sub">本ごとに4体を選抜してディベートさせる番組。相性の良い組み合わせは、対立の末にお互いを認める——推せる関係。</p>
+    <h2>名コンビ &mdash; 読み方が、ぶつかる</h2>
+    <p class="ph-sub">本ごとに一つの問いを立て、その問いに必要なキャラクターを選んで議論させる番組。出演人数も結末も毎回ちがう——平行線で終わる日もあれば、一目置き合う日もある。相性の良い組み合わせは、ぶつかるほど面白い。</p>
     <div class="pgrid" id="pairs"></div>
   </section>
   <footer class="foot">
@@ -201,7 +201,7 @@ const PAIRS=[
   {tag:'理性 × 感情',a:'シン',ma:'INTJ',b:'ユメ',mb:'INFP',txt:'看板コンビ。効率で斬るシンが、ユメの言葉で“人間的な定義”を学ぶ。冷 × 温。'},
   {tag:'行動 × 規律',a:'リク',ma:'ESTP',b:'マモル',mb:'ISTJ',txt:'凸凹コンビ。「動け」のリクと「続けろ」のマモルは、実は同じ“実践重視”。勢い × 堅実。'},
   {tag:'広げる × 締める',a:'ソラ',ma:'ENFP',b:'シン',mb:'INTJ',txt:'発散と収束。話を散らかすソラに、構造で締めるブレーキ役がいると議論が締まる。'},
-  {tag:'橋を架ける',a:'テル',ma:'ENFJ',b:'ミオ',mb:'ESFJ',txt:'司会に強い二人。Fe で場をまとめ、対立を相互理解のパートへ導く進行役。'}
+  {tag:'橋を架ける',a:'テル',ma:'ENFJ',b:'ミオ',mb:'ESFJ',txt:'司会に強い二人。Fe で場を整え、ぶつかった意見をそれぞれの答えとして並べ直す進行役。'}
 ];
 function pairsHTML(){return PAIRS.map(p=>`<div class="pair reveal"><div class="pair-hd"><span class="pair-tag">${p.tag}</span><span class="pair-vs">${p.a}<span class="amp">×</span>${p.b}</span></div><p><b>${p.ma}</b> × <b>${p.mb}</b> — ${p.txt}</p></div>`).join('');}
 document.querySelector('.key').innerHTML=keyHTML();
